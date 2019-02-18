@@ -49,7 +49,9 @@ table {
 	border-spacing: 0;
 }
 
-
+* {
+    box-sizing: border-box;
+}
 
 html {
     display: flex;
@@ -67,7 +69,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: blue;
-    width: 75%;
+    width: 100%;
 }
 
 header {
@@ -91,14 +93,16 @@ footer {
     color: white;
 }
 
-#nav-bar {
+#navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     background-color: yellow;
-    width: 100%;
+    padding-right: 40px;
 }
 
-#nav-bar a {
+#navbar a {
     font-size: 2.0rem;
     text-decoration: none;
     color: blue;
@@ -114,6 +118,7 @@ footer {
 }
 
 #welcome-section {
+    height: 100vh;
 }
 
 #about-me {
@@ -129,23 +134,26 @@ h1, h2, h3, h4 p {
 }
 
 h1 {
-    font-size: 4.5rem;
+    width: 100%;
+    font-size: 5.5rem;
+    line-height: 1.5;
 }
 
 h2 {
-    font-size: 3.0rem;
+    font-size: 4.0rem;
+    line-height: 1.5;
 }
 
 h3 {
-    font-size: 2.3rem;
+    font-size: 3.3rem;
 }
 
 h4 {
-    font-size: 2.0rem;
+    font-size: 3.0rem;
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 2.0rem;
 }
 
 .welcome-top-container {
@@ -217,3 +225,87 @@ p {
     color: white;
 }
 
+
+
+
+
+
+
+
+/*CSS rules for mobile*/
+@media (max-width: 500px) {
+
+    body {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 275px;
+    }
+
+    h1 {
+        width: 75%;
+        font-size: 3.8rem;
+        font-style: italic;
+    }
+
+    h2 {
+        font-size: 3.0rem;
+        font-style: italic;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        font-style: italic;
+    }
+
+    h4 {
+        font-size: 2.2rem;
+        font-style: italic;
+    }
+
+    #navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+        width: 100%;
+        padding: 30px 0px 0px 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    #navbar a {
+        font-size: 3.5rem;
+        line-height: 1.0;
+    }
+
+    .welcome-top-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-bottom-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .headshot-image {
+        width: 150px;
+        height: 175px;
+        border-radius: 50%;
+        margin: 20px 30px;
+    }
+
+    .project-image {
+        width: 150px;
+        height: 75px;
+        border-radius: 5px;
+        border: 2px solid purple;
+    }
+
+}

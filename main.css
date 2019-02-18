@@ -51,13 +51,64 @@ table {
 
 
 
+html {
+    /* 10px if the browser was 16px*/
+    /* 1rem === 10px @ medium browser settings */
+    font-size: 62.5%;
+}
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: lightgray;
+    background-color: gray;
+    width: 75%;
+}
+
+
+section {
+    
+}
+
+header {
+
+}
+
+main {
+
+}
+
+footer {
+
+}
+
+#nav-bar {
+    background-color: yellow;
+    width: 100%;
+}
+
+#nav-bar a {
+    font-size: 2.0rem;
+    text-decoration: none;
+    color: blue;
+    margin: 20px 15px;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 3.0rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+
+p {
+    font-size: 1.8rem;
 }
 
 .headshot-image {
@@ -69,4 +120,26 @@ body {
 .project-image {
     width: 300px;
     height: 150px;
+    border-radius: 5px;
+    border: 3px solid green;
 }
+
+.footer-ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.fa-twitter, .fa-github, .fa-linkedin-in {
+    font-size: 3.5rem;
+    margin: 20px 10px;
+}
+
+
+.fa-twitter {
+    color:rgb(34,179,235);
+}
+
+.fa-linkedin-in {
+    color: rgb(0,120,187);
+}
+
